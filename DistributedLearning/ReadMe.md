@@ -1,7 +1,7 @@
 # Code Overview and Results
 
 ## Code Overview
-In this code, I ran an experiment comparing normal training and distributed training of a Convolutional Neural Network (CNN) on the MNIST dataset to train a handwriting recognization model.
+In DistributedLearning_HandwritingRecognition, I ran an experiment comparing normal training and distributed training of a Convolutional Neural Network (CNN) on the MNIST dataset to train a handwriting recognization model.
 The goal is to demonstrate the performance and efficiency of distributed training using TensorFlow's MirroredStrategy.
 ### 1. Normal CNN Training
 - A standard CNN model is trained on the MNIST dataset.
