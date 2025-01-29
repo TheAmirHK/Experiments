@@ -39,7 +39,3 @@ The goal is to demonstrate the performance and efficiency of distributed trainin
 | Distributed Training   | ~31.81 seconds    | 99%               |
 
 - Training times and accuracy may vary depending on the hardware used (e.g., CPU vs. GPU).
-
----
-
-This format is clean, easy to read, and well-suited for a GitHub `README.md` file. Let me know if you need further adjustments!
