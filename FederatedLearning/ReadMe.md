@@ -1,7 +1,7 @@
-# Federated Learning with PyTorch: Healthcare Simulation
+# Federated Learning with PyTorch: Healthcare Simulation (FederatedLearning_HospitalUsecase)
 
 ## Code Overview
-This repository demonstrates a federated learning simulation using PyTorch. The goal is to train a global model on distributed healthcare datasets from multiple hospitals without sharing raw data.
+FederatedLearning_HospitalUsecase demonstrates a federated learning simulation using PyTorch. The goal is to train a global model on distributed healthcare datasets from multiple hospitals without sharing raw data.
 The simulation uses synthetic data for simplicity, but it can be adapted to real-world datasets.
 
 ### Key Features
