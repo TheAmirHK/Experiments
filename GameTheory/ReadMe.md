@@ -6,14 +6,36 @@ The most common ones can be found below and for more refer to Game Theory: An In
 ## 1. Nash Equilibrium
   - Definition: A set of strategies where no player can improve their payoff by unilaterally changing their strategy, given the strategies of the other players.
   - Example: In the Prisoner's Dilemma, the Nash Equilibrium is for both players to defect, even though mutual cooperation would yield a better outcome.
+  - #### **Mathematical Model**  
+  For a game with $n$ players, let:  
+- $S_i$ be the set of strategies for player $i$.  
+- $s_i ∈ S_i$ be a strategy for player $i$.  
+- $S_{-i}$ be the strategies of all players except player $i$.  
+- $u_i(s_i, s_{-i})$ be the payoff for player $i$ when they choose $s_i$ and others choose $s_{-i}$.
+- A strategy profile $s_1, s_2*, ..., s_n*$ is a **Nash Equilibrium** if:
+<p align="center">
+$u_i(s_i^*, s_{-i}) ≥ u_i(s_i, s_{-i}),  ∀s_i ∈ S_i, ∀{i} ∈ {1, 2, ..., n}$
+</p>
 
 ## 2. Pareto Optimal Equilibrium
   - Definition: A set of strategies where no player can improve their payoff without making another player worse off.
   - Example: In the Prisoner's Dilemma, mutual cooperation is Pareto optimal because neither player can improve their payoff without the other player's payoff decreasing.
-
+  - #### **Mathematical Model**  
+A strategy profile $(s_1*, s_2*, ..., s_n*)$ is **Pareto Optimal** if there does not exist another strategy profile $(s_1, s_2, ..., s_n)$ such that:  
+<p align="center">
+$u_i(s_1, s_2, ..., s_n) ≥ u_i(s_1*, s_2*, ..., s_n*) ∀i ∈ {1, 2, ..., n}$
+<br /> and <br />
+$u_j(s_1, s_2, ..., s_n) > u_j(s_1*, s_2*, ..., s_n*)$ for some $j$
+</p>
+  
 ## 3. Dominant Strategy Equilibrium
   - Definition: A set of strategies where each player's strategy is dominant (i.e., it yields the highest payoff regardless of the other players' strategies).
   - Example: In the Prisoner's Dilemma, defecting is a dominant strategy for both players, leading to a dominant strategy equilibrium.
+  - #### **Mathematical Model**  
+A strategy $s_i*$ is **dominant** for player $i$ if:
+<p align="center">
+$u_i(s_i*, s_{-i}) ≥ u_i(s_i, s_{-i}) ∀s_i ∈ S_i, ∀s_{-i} ∈ S_{-i}$
+</p>
 
 ## 4. Mixed Strategy Equilibrium
   - Definition: A set of strategies where players randomize their actions according to specific probabilities, and no player can improve their expected payoff by changing their strategy.
