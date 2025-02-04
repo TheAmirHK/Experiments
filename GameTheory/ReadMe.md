@@ -47,7 +47,9 @@ Let:
 - $u_i(σ_i, σ_{-i})$ be the expected payoff for player $i$.
 
 A **Mixed Strategy Nash Equilibrium** satisfies:
+<p align="center">
 $u_i(σ_i*, σ_{-i}) ≥ u_i(σ_i, σ_{-i}), ∀σ_i ∈ S_i, ∀i ∈ {1, 2, ..., n}$
+</p>
 
 
 ## 5. Subgame Perfect Equilibrium
