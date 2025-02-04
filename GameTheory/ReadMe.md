@@ -40,6 +40,15 @@ $u_i(s_i*, s_{-i}) ≥ u_i(s_i, s_{-i}) ∀s_i ∈ S_i, ∀s_{-i} ∈ S_{-i}$
 ## 4. Mixed Strategy Equilibrium
   - Definition: A set of strategies where players randomize their actions according to specific probabilities, and no player can improve their expected payoff by changing their strategy.
   - Example: In the game of Rock-Paper-Scissors, the mixed strategy equilibrium is for each player to choose Rock, Paper, or Scissors with equal probability (1/3 each).
+  - ### **Mathematical Model**  
+Let:
+- $σ_i$ be a mixed strategy for player $i$, which is a probability distribution over $S_i$.
+- $σ = (σ_1, σ_2, ..., σ_n)$ be the mixed strategies of all players.
+- $u_i(σ_i, σ_{-i})$ be the expected payoff for player $i$.
+
+A **Mixed Strategy Nash Equilibrium** satisfies:
+$u_i(σ_i*, σ_{-i}) ≥ u_i(σ_i, σ_{-i}), ∀σ_i ∈ S_i, ∀i ∈ {1, 2, ..., n}$
+
 
 ## 5. Subgame Perfect Equilibrium
   - Definition: A refinement of Nash Equilibrium that applies to dynamic games (games played over multiple stages). It requires that the strategies form a Nash Equilibrium in every subgame of the original game.
