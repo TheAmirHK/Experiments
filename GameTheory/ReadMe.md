@@ -40,7 +40,7 @@ $u_i(s_i*, s_{-i}) ≥ u_i(s_i, s_{-i}) ∀s_i ∈ S_i, ∀s_{-i} ∈ S_{-i}$
 ## 4. Mixed Strategy Equilibrium
   - Definition: A set of strategies where players randomize their actions according to specific probabilities, and no player can improve their expected payoff by changing their strategy.
   - Example: In the game of Rock-Paper-Scissors, the mixed strategy equilibrium is for each player to choose Rock, Paper, or Scissors with equal probability (1/3 each).
-  - ### **Mathematical Model**  
+  - #### **Mathematical Model**  
 Let:
 - $σ_i$ be a mixed strategy for player $i$, which is a probability distribution over $S_i$.
 - $σ = (σ_1, σ_2, ..., σ_n)$ be the mixed strategies of all players.
@@ -48,17 +48,28 @@ Let:
 
 A **Mixed Strategy Nash Equilibrium** satisfies:
 <p align="center">
-$u_i(σ_i*, σ_{-i}) ≥ u_i(σ_i, σ_{-i}), ∀σ_i ∈ S_i, ∀i ∈ {1, 2, ..., n}$
+$u_i(σ_i*, σ_{-i}) ≥ u_i(σ_i, σ_{-i}), ∀σ_i, ∀i ∈ {1, 2, ..., n}$
 </p>
 
 
 ## 5. Subgame Perfect Equilibrium
   - Definition: A refinement of Nash Equilibrium that applies to dynamic games (games played over multiple stages). It requires that the strategies form a Nash Equilibrium in every subgame of the original game.
   - Example: In a sequential bargaining game, the subgame perfect equilibrium involves players making offers and counteroffers that are optimal at every stage of the game.
+  - #### **Mathematical Model**  
+A strategy profile $(s_1*, s_2*, ..., s_n*)$ is a **Subgame Perfect Equilibrium** if it induces a Nash Equilibrium in every subgame of the original game.
+
 
 ## 6. Correlated Equilibrium
   - Definition: A set of strategies where players follow recommendations from a trusted third party (correlating device), and no player can improve their expected payoff by deviating from the recommendation.
   - Example: In a traffic light game, a traffic light acts as a correlating device, telling drivers when to go and when to stop. Following the light's signals forms a correlated equilibrium.
+  - #### **Mathematical Model**  
+Let $π$ be a probability distribution over the set of strategy profiles $S = S_1 × S_2 × ... × S_n$, where:  
+- $π(s)$ is the probability of selecting strategy profile $s$.
+
+A probability distribution $π$ is a **Correlated Equilibrium** if:
+<p align="center">
+$∑{s{-i}} π(s_i, s_{-i}) * [ u_i(s_i, s_{-i}) - u_i(s_i', s_{-i}) ] ≥ 0, ∀s_i, s_i' ∈ S_i, and ∀i∈{1,2,...,n}$
+</p>
 
 ## 7. Evolutionarily Stable Strategy (ESS)
   - Definition: A strategy that, if adopted by a population, cannot be invaded by any alternative strategy. It is a concept from evolutionary game theory.
