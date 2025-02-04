@@ -70,6 +70,7 @@ A probability distribution $π$ is a **Correlated Equilibrium** if:
 <p align="center">
 $∑{s{-i}} π(s_i, s_{-i}) * [ u_i(s_i, s_{-i}) - u_i(s_i', s_{-i}) ] ≥ 0, ∀s_i, s_i' ∈ S_i, and ∀i∈{1,2,...,n}$
 </p>
+This means no player can improve their expected payoff by unilaterally deviating from the recommendation.
 
 ## 7. Evolutionarily Stable Strategy (ESS)
   - Definition: A strategy that, if adopted by a population, cannot be invaded by any alternative strategy. It is a concept from evolutionary game theory.
