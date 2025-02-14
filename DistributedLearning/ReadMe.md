@@ -1,4 +1,10 @@
-# Code Overview and Results
+# What is distributed learning
+Distributed learning refers to the process of training machine learning models across multiple machines or nodes instead of a single system. This approach is used to speed up training, handle large datasets, and improve scalability. There are different types of distributed learning, including:
+
+  -  Data Parallelism – The dataset is split across multiple machines, and each machine trains the same model on different subsets of data. The results are then aggregated.
+  -  Model Parallelism – The model itself is split across different machines, with each machine handling a portion of the computations.
+  -  Federated Learning – A decentralized form of distributed learning where multiple devices train a model locally and share only model updates instead of raw data.
+  -  Reinforcement Learning (RL) Distributed Training – Used in reinforcement learning, where multiple agents explore an environment in parallel and share their experiences to improve learning.
 
 ## Code Overview
 In DistributedLearning_HandwritingRecognition, I ran an experiment comparing normal training and distributed training of a Convolutional Neural Network (CNN) on the MNIST dataset to train a handwriting recognization model.
