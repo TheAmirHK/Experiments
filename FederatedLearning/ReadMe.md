@@ -1,4 +1,18 @@
 # Federated Learning with PyTorch: Healthcare Simulation (FederatedLearning_HospitalUsecase)
+***Federated Learning*** refers to a type of machine learning where the model is trained across multiple devices or servers, each holding local data, without the need to share that data with a central server. Instead, each device (or client) trains a local model on its own data and only shares the model updates (such as gradients) with a central server. The central server aggregates these updates to improve the global model.
+
+The key advantages of federated learning include:
+
+  - *Privacy* – Since raw data never leaves the device, it helps maintain user privacy and complies with regulations such as GDPR.
+  - *Data Security* – Sensitive data (like personal information) remains on local devices, reducing the risk of a data breach.
+  - *Efficiency* – Federated learning reduces the need for transmitting large datasets to a central server, saving bandwidth and storage.
+
+The process typically involves:
+  - *Local Training* – Each device trains the model on its local data.
+  - *Model Updates* – The device sends only the model weights or gradients, not the data itself, to the central server.
+  - *Aggregation* – The central server aggregates the updates from all devices (usually by averaging the weights or gradients) and updates the global model.
+  - *Global Model Distribution* – The updated global model is then sent back to the devices for further training.
+
 
 ## Code Overview
 FederatedLearning_HospitalUsecase demonstrates a federated learning simulation using PyTorch. The goal is to train a global model on distributed healthcare datasets from multiple hospitals without sharing raw data.
